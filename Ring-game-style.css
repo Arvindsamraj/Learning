@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: conic-gradient( #012a31, #024a57 90%,  #024a57 20%, #012a31 );
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;  
+}
+nav img{
+    width: 150px;
+    padding: 0% !important;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    font-family: Tr2n;
+}
+.nav-links ul li a{
+    color: #00bfe0;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #00bfe0;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+.nav-links ul li:hover::after{
+    width: auto;
+}
+/*------content on the image-----*/
+
+.container{
+    position: relative;
+    text-align: auto;
+    color: #00bfe0;
+}
+.hor1{
+    border-top: 3px solid #00bfe0;
+    width: 50%;
+}
+.build{
+    width: auto;
+    height: auto;
+    background-size: contain;
+    border: 3px solid #00bfe0;
+    border-radius: 5px;
+    margin: 0 100px 0 100px;
+    font-size: larger;
+    text-align: left;
+}
+.light-img{
+    width: 40%;
+    height: 150%;
+    padding: 0 100px 0 100px;
+    float: right;
+}
+.clearfix{
+    overflow-y: auto; 
+}
